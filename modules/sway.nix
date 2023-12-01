@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 
@@ -40,8 +40,11 @@
 	 }; 
 	};
         output = {
-          HDMI-A-1 = { mode = "2560x1440@143Hz"; };
-          DP-1 = { mode = "3440x1440@100Hz"; };
+          HDMI-A-1 = { mode = "2560x1440@143Hz"; }; # nixnuc
+          DP-1 = { mode = "3440x1440@100Hz"; }; # nixwrk
+	};
+	keybindings = lib.mkOptionDefault {
+          "Mod4+l" = "exec swaylock -C $HOME/dotfiles/modules/swaylock.config";
 	};
       };
     };
