@@ -30,10 +30,10 @@
           "signon.rememberSignons" = false;
 
         };
-        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-          proton-pass
-          ublock-origin
-        ];
+        #extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        #  proton-pass
+        #  ublock-origin
+        #];
       };
     };
   };

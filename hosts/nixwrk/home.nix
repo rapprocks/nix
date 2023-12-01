@@ -1,10 +1,12 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 
   imports = [
     ../../modules/sway.nix
     ../../home/alacritty.nix
+    ../../home/firefox.nix
+    ../../home/shell.nix
   ];
 
   home = {
@@ -15,9 +17,7 @@
   };
 
   programs = {
-    alacritty.enable = true;
     chromium.enable = true;
-    firefox.enable = true;
     eza = {
       enable = true;
       enableAliases = true;

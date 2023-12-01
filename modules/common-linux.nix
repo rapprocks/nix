@@ -45,7 +45,7 @@
   };
 
   fonts = {
-    fonts = with pkgs; [
+    packages = with pkgs; [
       (nerdfonts.override { fonts = [ "FiraCode" "Hack" "JetBrainsMono" "FiraCode" ]; })
     ];
     fontconfig = {
@@ -73,7 +73,11 @@
       enable = true;
       extraPortals = with pkgs; [
         xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk
+	xdg-desktop-portal-gtk
+      ];
+      configPackages = with pkgs; [
+        xdg-desktop-portal-wlr
+	xdg-desktop-portal-gtk
       ];
     };
   };
@@ -96,6 +100,8 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+
+  programs.zsh.enable = true;
 
   system.stateVersion = "23.05";
 }
