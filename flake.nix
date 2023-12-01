@@ -48,6 +48,7 @@
 
 	modules = [
           ./hosts/nixwrk
+	  ./modules/common-linux.nix
 
           home-manager.nixosModules.home-manager
           {
@@ -55,7 +56,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = inputs;
-            home-manager.users.philip = import ./home/home.nix;
+            home-manager.users.philip = import ./hosts/nixwrk/home.nix;
           }
 	];
       };
