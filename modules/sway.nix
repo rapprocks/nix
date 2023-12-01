@@ -37,7 +37,10 @@
 	   xkb_options = "caps:ctrl_modifier";
 	   repeat_delay = "225";
 	   repeat_rate = "25";
-	 }; 
+	 };
+	 "type:pointer" = {
+           accel_profile = "flat";
+	 };
 	};
         output = {
           HDMI-A-1 = { mode = "2560x1440@143Hz"; }; # nixnuc
