@@ -5,6 +5,7 @@
   imports = [
     ../../modules/sway.nix
     ../../home/alacritty.nix
+    ../../home/firefox.nix
   ];
 
   home = {
@@ -17,7 +18,6 @@
   programs = {
     alacritty.enable = true;
     chromium.enable = true;
-    firefox.enable = true;
     eza = {
       enable = true;
       enableAliases = true;
