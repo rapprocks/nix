@@ -6,6 +6,7 @@
     ../../modules/sway.nix
     ../../home/alacritty.nix
     ../../home/firefox.nix
+    ../../home/shell.nix
   ];
 
   home = {

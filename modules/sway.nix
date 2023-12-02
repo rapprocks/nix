@@ -24,14 +24,14 @@
         terminal = "alacritty";
         menu = "wofi --show run";
         bars = [{
-          fonts.size = 16.0;
+          fonts.size = 8.0;
           position = "top";
         }];
 	window = {
 	  titlebar = false;
 	};
 	input = {
-         "*" = {
+         "type:keyboard" = {
            xkb_variant = "mac";
 	   xkb_layout = "se";
 	   xkb_options = "caps:ctrl_modifier";
@@ -40,6 +40,7 @@
 	 };
 	 "type:pointer" = {
            accel_profile = "flat";
+	   pointer_accel = "0.7";
 	 };
 	};
         output = {
@@ -48,6 +49,7 @@
 	};
 	keybindings = lib.mkOptionDefault {
           "Mod4+l" = "exec swaylock -C $HOME/dotfiles/modules/swaylock.config";
+	  "Mod4+q" = "kill";
 	};
       };
     };
