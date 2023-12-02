@@ -44,7 +44,10 @@
 	 };
 	};
         output = {
-          HDMI-A-1 = { mode = "2560x1440@143Hz"; }; # nixnuc
+          HDMI-A-1 = {
+	    mode = "2560x1440@143Hz";
+	    background = "#000000 solid_color";
+	  };
           DP-1 = { mode = "3440x1440@100Hz"; }; # nixwrk
 	};
 	keybindings = lib.mkOptionDefault {
