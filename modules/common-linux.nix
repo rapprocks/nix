@@ -10,6 +10,8 @@
     wget
     tree
     btop
+    gcc
+    nnn
   ];
 
   time.timeZone = "Europe/Stockholm";
