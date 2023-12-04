@@ -57,6 +57,8 @@
 
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.philip = import ./hosts/nixwrk/home.nix;
+
+
           }
 	];
       };

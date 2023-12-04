@@ -34,6 +34,13 @@
 	   repeat_delay = "225";
 	   repeat_rate = "25";
 	 };
+	 "1452:592:Ducky_Ducky_One2_Mini_RGB" = {
+	   xkb_variant = "mac";
+	   xkb_layout = "se";
+	   xkb_options = "altwin:swap_lalt_lwin,caps:ctrl_modifier";
+	   repeat_delay = "225";
+	   repeat_rate = "25";
+	 };
 	 "type:pointer" = {
            accel_profile = "flat";
 	   pointer_accel = "0.7";
