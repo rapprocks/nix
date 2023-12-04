@@ -18,7 +18,6 @@
 
   programs = {
     alacritty.enable = true;
-    chromium.enable = true;
     eza = {
       enable = true;
       enableAliases = true;
