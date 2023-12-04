@@ -7,6 +7,7 @@
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix
+    ../../home/mako.nix
   ];
 
   home = {
