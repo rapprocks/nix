@@ -38,7 +38,13 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = inputs;
-            home-manager.users.philip = import ./hosts/nixnuc/home.nix;
+
+            home-manager.users.philip = { pkgs, ... }: {
+              imports = [./hosts/nixnuc/home.nix];
+              home.username = "philip";
+              home.homeDirectory = "/home/philip";
+              home.stateVersion = "23.05";
+            };
           }
 
         ];

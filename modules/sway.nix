@@ -23,6 +23,9 @@
         modifier = "Mod4";
         terminal = "alacritty";
         menu = "wofi --show run";
+	bars = [{
+	  position = "top";
+	}];
       	window = {
           titlebar = false;
 	};

@@ -18,7 +18,6 @@
   };
 
   programs = {
-    chromium.enable = true;
     eza = {
       enable = true;
       enableAliases = true;

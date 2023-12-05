@@ -7,17 +7,17 @@
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix
+    ../../home/mako.nix
   ];
 
-  home = {
-    username = "philip";
-    homeDirectory = "/home/philip";
-
-    stateVersion = "23.05";
-  };
+#  home = {
+#    username = "philip";
+#    homeDirectory = "/home/philip";
+#
+#    stateVersion = "23.05";
+#  };
 
   programs = {
-    alacritty.enable = true;
     eza = {
       enable = true;
       enableAliases = true;
