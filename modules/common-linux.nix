@@ -12,6 +12,8 @@
     btop
     gcc
     nnn
+    ranger
+    blueberry
   ];
 
   time.timeZone = "Europe/Stockholm";
