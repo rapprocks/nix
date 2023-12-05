@@ -7,3 +7,6 @@
 - Peripherals
     - Webcam
     - Headset
+
+## Links
+https://grimoire.science/working-with-wayland-and-sway/
