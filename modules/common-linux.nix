@@ -48,6 +48,14 @@
     autoRepeatInterval = 25;
   };
 
+  environment.variables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+    
+    MOZ_ENABLE_WAYLAND = "1";
+    NIXOS_OZONE_WL = "1";
+  };
+
   fonts = {
     packages = with pkgs; [
       (nerdfonts.override { fonts = [ "FiraCode" "Hack" "JetBrainsMono" "FiraCode" ]; })
