@@ -57,6 +57,7 @@
 	keybindings = lib.mkOptionDefault {
           "Mod4+l" = "exec swaylock -C $HOME/dotfiles/modules/swaylock.config";
 	  "Mod4+q" = "kill";
+	  "Mod4+space" = "exec wofi --show run";
 	};
       };
     };

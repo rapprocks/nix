@@ -6,6 +6,10 @@
       ./hardware-configuration.nix
     ];
 
+  environment.systemPackages = with pkgs; [
+    fluent-reader
+  ];
+
   boot.loader = {
     systemd-boot.enable = false;
     efi = {
