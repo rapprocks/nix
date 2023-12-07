@@ -14,6 +14,7 @@
     nnn
     ranger
     blueberry
+    pavucontrol
   ];
 
   time.timeZone = "Europe/Stockholm";

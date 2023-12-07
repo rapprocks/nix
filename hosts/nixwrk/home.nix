@@ -8,6 +8,7 @@
     ../../home/firefox.nix
     ../../home/shell.nix
     ../../home/mako.nix
+    ../../home/waybar.nix
   ];
 
   home = {
