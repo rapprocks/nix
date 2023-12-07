@@ -14,6 +14,7 @@
     wofi
     waybar
     wlr-randr
+    sway-contrib.grimshot
   ];
 
     wayland.windowManager.sway = {
@@ -58,6 +59,8 @@
           "Mod4+l" = "exec swaylock -C $HOME/dotfiles/modules/swaylock.config";
 	  "Mod4+q" = "kill";
 	  "Mod4+space" = "exec wofi --show run";
+	  "Mod4+p" = "exec grimshot save active";
+	  "Mod4+shift+p" = "exec wl-copy < $(grimshot save area)";
 	};
       };
     };

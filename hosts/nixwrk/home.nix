@@ -9,6 +9,7 @@
     ../../home/shell.nix
     ../../home/mako.nix
     ../../home/waybar.nix
+    ../../home/tmux.nix
   ];
 
   home = {

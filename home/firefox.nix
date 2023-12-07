@@ -1,7 +1,7 @@
-{ config, pkgs, nur, ... }:
+{ config, pkgs, lib, nur, ... }:
 
 {
-  
+
   programs.firefox = {
     enable = true;
     profiles = {
@@ -30,10 +30,10 @@
           "signon.rememberSignons" = false;
 
         };
-        #extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        #  proton-pass
-        #  ublock-origin
-        #];
+        # extensions = with nur.repos.rycee.firefox-addons; [
+        #   proton-pass
+        #   ublock-origin
+        # ];
       };
     };
   };

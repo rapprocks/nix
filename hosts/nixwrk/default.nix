@@ -38,6 +38,7 @@ in
 
   environment.systemPackages = with pkgs; [
     slack
+    fluent-reader
   ];
 
   sound.enable = true;
