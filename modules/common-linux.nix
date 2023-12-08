@@ -15,6 +15,8 @@
     ranger
     blueberry
     pavucontrol
+    ueberzugpp
+    libnotify
   ];
 
   time.timeZone = "Europe/Stockholm";
@@ -70,6 +72,7 @@
 
   users.users.philip = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" "networkmanager" ];
   };
 

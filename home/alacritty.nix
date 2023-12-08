@@ -11,7 +11,7 @@
         modifiers = "shift";
       };
       font = {
-        size = 16;
+        size = 14;
         glyph_offset = {
           x = 0;
           y = 0;

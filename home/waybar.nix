@@ -2,7 +2,7 @@
 
 {
   home.file = {
-    ".config/waybar/style.css".source = ./style.css;
+    "~/.config/waybar/style.css".source = ./style.css;
   };
   programs.waybar = {
     enable = true;
@@ -49,25 +49,6 @@
           format-alt = "{:%Y-%m-%d %H:%M} ";
           format = "{:%H:%M} ";
         };
-        "battery" = {
-          states = {
-            good = 95;
-            warning = 30;
-            critical = 15;
-          };
-          format = "{icon} {capacity}%";
-          format-icons = [ "" "" "" "" "" ];
-          format-charging = "{capacity}% ";
-          format-plugged = "{capacity}% ";
-          format-discharging = "{capacity}%🔋";
-        };
-        # "network" = {
-        #   "format-wifi" = " {essid} {signalStrength}%";
-        #   "format-ethernet" = "  {bandwidthUpBits} {bandwidthDownBits}";
-
-        #   "format-disconnected" = "Disconnected ⚠";
-        #   "interval" = 2;
-        # };
         "bluetooth" = {
           format = "<b>{icon}</b>";
           format-alt = "{status} {icon}";
