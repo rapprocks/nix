@@ -10,6 +10,7 @@
     wget
     tree
     btop
+    tldr
     gcc
     nnn
     ranger
@@ -118,6 +119,7 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.zsh.enable = true;
+  programs.dconf.enable = true;
 
   system.stateVersion = "23.05";
 }

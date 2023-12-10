@@ -8,6 +8,7 @@
 
   environment.systemPackages = with pkgs; [
     fluent-reader
+    caprine-bin
   ];
 
   boot.loader = {
@@ -32,6 +33,9 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   networking.hostName = "nixnuc";
   networking.networkmanager.enable = true;

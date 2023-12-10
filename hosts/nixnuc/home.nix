@@ -10,6 +10,7 @@
     ../../home/mako.nix
     ../../home/tmux.nix
     ../../home/waybar.nix
+    ../../home/theme.nix
   ];
 
   programs = {
