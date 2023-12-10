@@ -2,7 +2,7 @@
 
 {
   home.file = {
-    "~/.config/waybar/style.css".source = ./style.css;
+    "$HOME/dotfiles/home/style.css".source = ./style.css;
   };
   programs.waybar = {
     enable = true;

@@ -61,6 +61,9 @@
 	  "Mod4+space" = "exec wofi --show run";
 	  "Mod4+p" = "exec grimshot save active";
 	  "Mod4+shift+p" = "exec wl-copy < $(grimshot save area)";
+	  "XF86AudioMute" = "exec --no-startup-id 'amixer set Master toggle'";
+	  "XF86AudioRaiseVolume" = "exec --no-startup-id 'amixer sset Master '5%+''";
+	  "XF86AudioLowerVolume" = "exec --no-startup-id 'amixer sset Master '5%-''";
 	};
       };
     };

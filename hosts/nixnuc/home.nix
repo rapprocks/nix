@@ -9,14 +9,8 @@
     ../../home/shell.nix
     ../../home/mako.nix
     ../../home/tmux.nix
+    ../../home/waybar.nix
   ];
-
-#  home = {
-#    username = "philip";
-#    homeDirectory = "/home/philip";
-#
-#    stateVersion = "23.05";
-#  };
 
   programs = {
     eza = {
@@ -34,6 +28,7 @@
         url = { "ssh://git@github.com/" = { insteadOf = "https://github.com/"; }; };
       };
     };
+    obs-studio.enable = true;
   };
 
   fonts.fontconfig.enable = true;
