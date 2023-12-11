@@ -14,12 +14,7 @@
     wlr-randr
     sway-contrib.grimshot
   ];
-
-  services.swayidle = {
-    enable = true;
-    systemdTarget = "sway-session.target";
-  };
-
+  
   wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
