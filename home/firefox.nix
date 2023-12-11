@@ -1,4 +1,4 @@
-{ config, pkgs, lib, nur, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 
@@ -23,17 +23,17 @@
           "mousewheel.min_line_scroll_amount" = 25;
 
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
-          "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+          "extensions.activeThemeID" = "e7c9fb23-17c0-4bb6-a8ba-ff52a7770b89";
           "ui.systemUsesDarkTheme" = 1;
           "devtools.theme" = "dark";
 
           "signon.rememberSignons" = false;
 
         };
-        # extensions = with nur.repos.rycee.firefox-addons; [
-        #   proton-pass
-        #   ublock-origin
-        # ];
+        #extensions = with pkgs.inputs.firefox-addons; [
+        #  proton-pass
+        #  ublock-origin
+        #];
       };
     };
   };
