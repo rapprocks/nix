@@ -50,6 +50,8 @@ in
     pulse.enable = true;
   };
 
+  programs.thunar.enable = true;
+
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 

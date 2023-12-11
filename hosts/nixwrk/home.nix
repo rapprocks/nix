@@ -10,6 +10,7 @@
     ../../home/mako.nix
     ../../home/waybar.nix
     ../../home/tmux.nix
+    ../../home/theme.nix
   ];
 
   home = {
@@ -35,6 +36,7 @@
         url = { "ssh://git@github.com/" = { insteadOf = "https://github.com/"; }; };
       };
     };
+    feh.enable = true;
   };
 
   fonts.fontconfig.enable = true;
