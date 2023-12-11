@@ -6,7 +6,7 @@
   ];
 
   home.packages = with pkgs; [
-    swaylock-effects
+    swaylock
     wl-clipboard
     mako
     wofi
@@ -56,8 +56,7 @@
 	  background = "$HOME/dotfiles/wallpapers/nix-dark.wp.svg fill";  }; # nixwrk
       };
       keybindings = lib.mkOptionDefault {
-        #"Mod4+l" = "exec swaylock -C $HOME/dotfiles/modules/sway/lock.sh";
-        "Mod4+l" = "exec swaylock --clock";
+        "Mod4+l" = "exec swaylock -C $HOME/dotfiles/home/sway/swaylock.config";
 	"Mod4+q" = "kill";
 	"Mod4+space" = "exec wofi --show run";
 	"Mod4+p" = "exec grimshot save active --notify";
