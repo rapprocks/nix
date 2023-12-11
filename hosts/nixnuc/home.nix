@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ../../modules/sway/sway.nix
+    ../../home/sway/sway.nix
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix

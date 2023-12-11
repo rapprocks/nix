@@ -6,9 +6,7 @@
   ];
 
   home.packages = with pkgs; [
-    # All of the below is for sway
     swaylock-effects
-    #swaylock
     wl-clipboard
     mako
     wofi
@@ -56,7 +54,7 @@
       output = {
 	HDMI-A-1 = {
 	  mode = "2560x1440@143Hz";
-	  background = "$HOME/dotfiles/wallpapers/nix-dark.wp.svg fill";
+	  background = "$HOME/dotfiles/wallpapers/nix-dark.wp.svg fill"; # nixnuc
 	};
         DP-1 = {
 	  mode = "3440x1440@100Hz";
