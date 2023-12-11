@@ -14,10 +14,8 @@
         modules-left = [ "sway/workspaces" ];
         modules-center = [ "sway/window" ];
         modules-right = [
-          "network"
           "pulseaudio"
           "bluetooth"
-          "tray"
           "clock"
         ];
         "sway/workspaces" = {
@@ -39,10 +37,6 @@
             "focused" = "";
             "default" = "";
           };
-        };
-        "tray" = {
-          icon-size = 24;
-          spacing = 8;
         };
         "clock" = {
           tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
@@ -73,12 +67,6 @@
             "default" = [ "" "" ];
           };
           "on-click" = "pavucontrol";
-        };
-        "custom/emoji-picker" = {
-          "format" = "👾";
-          "tooltip" = "true";
-          "tooltip-format" = "Pick an emoji and copy it to the clipboard";
-          "on-click" = "wofi-emoji";
         };
       }
     ];
