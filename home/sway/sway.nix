@@ -6,7 +6,7 @@
   ];
 
   home.packages = with pkgs; [
-    swaylock
+    swaylock-effects
     wl-clipboard
     mako
     wofi
