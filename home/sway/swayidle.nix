@@ -10,7 +10,7 @@
       }
       {
         timeout = 30; #300
-        command = "${pkgs.swaylock}/bin/swaylock";
+        command = "${pkgs.swaylock}/bin/swaylock -C $HOME/dotfiles/home/sway/swaylock.config";
       }
       {
         timeout = 40; #360
@@ -21,7 +21,7 @@
     events = [
       {
         event = "before-sleep";
-        command = "${pkgs.swaylock}/bin/swaylock";
+        command = "${pkgs.swaylock}/bin/swaylock -C $HOME/dotfiles/home/sway/swaylock.config";
       }
     ];
   };

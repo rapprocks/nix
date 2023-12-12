@@ -4,6 +4,7 @@
       image = "$HOME/dotfiles/wallpapers/dark-earth.wp.png";
       daemonize = true;
       ignore-empty-password = true;
+      color = "0e0e0e";
     };
   };
 }
