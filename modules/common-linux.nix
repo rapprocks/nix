@@ -104,6 +104,8 @@
     text = "auth include login";
   };
 
+  services.gnome.gnome-keyring.enable = true;
+
   nix = {
     gc = {
       automatic = true;
