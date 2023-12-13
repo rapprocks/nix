@@ -11,6 +11,9 @@
       enableCompletion = true;
       syntaxHighlighting.enable = true;
       autocd = true;
+      profileExtra = ''
+        [ "$(tty)" = "/dev/tty1" ] && exec sway
+      '';
       shellAliases = {
         rebuild = "sudo nixos-rebuild switch";
         vi = "nvim";
@@ -23,14 +26,6 @@
         tree = "tree -C";
         dev = "cd ~/Developer";
       };
-      #oh-my-zsh = {
-      #  enable = true;
-      #  plugins = [
-      #    "git"
-      #    "ssh-agent"
-      #  ];
-      #  theme = "robbyrussell";
-      #};
     };
     starship = {
       enable = true;

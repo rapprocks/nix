@@ -10,18 +10,18 @@
       }
       {
         timeout = 300; #300
-        command = "${pkgs.swaylock-effects}/bin/swaylock --screenshots --clock --effect-blur 7x5";
+        command = "${pkgs.swaylock-effects}/bin/swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png";
       }
       {
         timeout = 360; #360
-        command = "swaymsg 'output * dpms off'";
-        resumeCommand = "swaymsg 'output * dpms on'";
+        command = "${pkgs.sway}/bin/swaymsg 'output * dpms off'";
+        resumeCommand = "${pkgs.sway}/bin/swaymsg 'output * dpms on'";
       }
     ];
     events = [
       {
         event = "before-sleep";
-        command = "${pkgs.swaylock-effects}/bin/swaylock --screenshots --clock --effect-blur 7x5";
+        command = "${pkgs.swaylock-effects}/bin/swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png";
       }
     ];
   };
