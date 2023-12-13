@@ -9,6 +9,7 @@
   environment.systemPackages = with pkgs; [
     fluent-reader
     caprine-bin
+    solaar
   ];
 
   boot.loader = {
@@ -21,6 +22,7 @@
       devices = [ "nodev" ];
       enable = true;
       efiSupport = true;
+      gfxmodeEfi = "2560x1440";
     };
   };
 
@@ -34,7 +36,10 @@
     pulse.enable = true;
   };
 
-  hardware.bluetooth.enable = true;
+  hardware = {
+    bluetooth.enable = true;
+    logitech.wireless.enable = true;
+  };
   services.blueman.enable = true;
 
   networking.hostName = "nixnuc";

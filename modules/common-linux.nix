@@ -116,6 +116,7 @@
       automatic = true;
       dates = [ "weekly" ];
     };
+    settings.experimental-features = "nix-command flakes";
   };
 
   nixpkgs.config.allowUnfree = true;
