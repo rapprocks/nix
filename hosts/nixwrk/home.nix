@@ -20,6 +20,14 @@
     stateVersion = "23.05";
   };
 
+  xdg.mimeApps = {
+    defaultApplications = {
+      "text/html" = "firefox.desktop";
+      "x-scheme-handler/http" = "firefox.desktop";
+      "x-scheme-handler/https" = "firefox.desktop";
+    };
+  };
+
   programs = {
     eza = {
       enable = true;

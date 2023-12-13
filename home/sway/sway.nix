@@ -56,7 +56,8 @@
 	  background = "$HOME/dotfiles/wallpapers/nix-dark.wp.svg fill";  }; # nixwrk
       };
       keybindings = lib.mkOptionDefault {
-        "Mod4+l" = "exec swaylock -C $HOME/dotfiles/home/sway/swaylock.config";
+        #"Mod4+l" = "exec swaylock -C $HOME/dotfiles/home/sway/swaylock.config";
+        "Mod4+l" = "exec swaylock --screenshots --clock --effect-blur 7x5";
 	"Mod4+q" = "kill";
 	"Mod4+space" = "exec wofi --show run";
 	"Mod4+p" = "exec grimshot save active --notify";

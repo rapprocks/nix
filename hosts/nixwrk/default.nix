@@ -39,6 +39,8 @@ in
   environment.systemPackages = with pkgs; [
     slack
     fluent-reader
+    powershell
+    caprine-bin
   ];
 
   sound.enable = true;
