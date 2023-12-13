@@ -49,14 +49,14 @@
       output = {
 	HDMI-A-1 = {
 	  mode = "2560x1440@143Hz";
-	  background = "$HOME/dotfiles/wallpapers/nix-dark.wp.svg fill"; # nixnuc
+	  background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill"; # nixnuc
 	};
         DP-1 = {
 	  mode = "3440x1440@100Hz";
 	  background = "$HOME/dotfiles/wallpapers/nix-dark.wp.svg fill";  }; # nixwrk
       };
       keybindings = lib.mkOptionDefault {
-        "Mod4+l" = "exec swaylock -C $HOME/dotfiles/home/sway/swaylock.config";
+        "Mod4+l" = "exec swaylock --screenshots --clock --effects-blur 7x5";
 	"Mod4+q" = "kill";
 	"Mod4+space" = "exec wofi --show run";
 	"Mod4+p" = "exec grimshot save active --notify";

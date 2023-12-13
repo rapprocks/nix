@@ -10,18 +10,18 @@
       }
       {
         timeout = 300; #300
-        command = "${pkgs.swaylock-effects}/bin/swaylock --screenshots --clock";
+        command = "${pkgs.swaylock-effects}/bin/swaylock --screenshots --clock --effect-blur 7x5";
       }
       {
         timeout = 360; #360
-        command = "${pkgs.sway}/bin/swaymsg 'output * dpms off'";
-        resumeCommand = "${pkgs.sway}/bin/swaymsg 'output * dpms on'";
+        command = "swaymsg 'output * dpms off'";
+        resumeCommand = "swaymsg 'output * dpms on'";
       }
     ];
     events = [
       {
         event = "before-sleep";
-        command = "${pkgs.swaylock-effects}/bin/swaylock --screenshots --clock";
+        command = "${pkgs.swaylock-effects}/bin/swaylock --screenshots --clock --effect-blur 7x5";
       }
     ];
   };
