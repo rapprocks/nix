@@ -52,7 +52,7 @@
 	        background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill";  }; # nixwrk
       };
       keybindings = lib.mkOptionDefault {
-        "Mod4+l" = "exec swaylock --screenshots --clock --effects-blur 7x5";
+        "Mod4+l" = "exec swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png";
 	      "Mod4+q" = "kill";
 	      "Mod4+space" = "exec wofi --show run";
 	      "Mod4+p" = "exec grimshot save active --notify";

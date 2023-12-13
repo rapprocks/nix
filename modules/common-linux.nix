@@ -18,6 +18,7 @@
     pavucontrol
     ueberzugpp
     libnotify
+    xdg-utils
   ];
 
   time.timeZone = "Europe/Stockholm";
@@ -38,7 +39,6 @@
 
   console = {
     font = "Lat2-Terminus16";
-    # keyMap = "sv-latin1";
     useXkbConfig = true; # use xkbOptions in tty.
   };
 
