@@ -13,6 +13,14 @@
   ];
   
   wayland.windowManager.sway = {
+
+    extraSessionCommands = ''
+      export MOZ_ENABLE_WAYLAND="1"
+      export NIXOS_OZONE_WL="1"
+      export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
+      export QT_QPA_PLATFORM=wayland
+    '';
+
     enable = true;
     wrapperFeatures.gtk = true;
     config = {
@@ -23,6 +31,12 @@
       window = {
         titlebar = false;
       };
+      window.commands = [
+	{
+	  criteria.app_id = "pavucontrol";
+	  command = "floating enable";
+	}
+      ];
       input = {
 	      "type:keyboard" = {
 	        xkb_variant = "mac";

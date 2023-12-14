@@ -56,8 +56,9 @@
     EDITOR = "nvim";
     VISUAL = "nvim";
     
-    MOZ_ENABLE_WAYLAND = "1";
-    NIXOS_OZONE_WL = "1";
+    #MOZ_ENABLE_WAYLAND = "1";
+    #NIXOS_OZONE_WL = "1";
+    #QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
   };
 
   fonts = {
