@@ -60,7 +60,7 @@
           "format-icons" = {
             "headphones" = "";
             "handsfree" = "";
-            "headset" = "";
+            "headset" = "󰋎";
             "phone" = "";
             "portable" = "";
             "car" = "";

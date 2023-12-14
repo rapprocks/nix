@@ -6,7 +6,6 @@
     swaylock-effects
     wl-clipboard
     mako
-    wofi
     waybar
     wlr-randr
     sway-contrib.grimshot

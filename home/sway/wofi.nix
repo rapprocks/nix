@@ -1,0 +1,8 @@
+{ pkgs, ... }: {
+  programs.wofi = {
+    enable = true;
+    settings = {
+      width = 250;
+    };
+  };
+}
