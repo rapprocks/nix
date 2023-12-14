@@ -11,6 +11,7 @@
     ../../home/tmux.nix
     ../../home/waybar.nix
     ../../home/theme.nix
+    ../../home/desktop
   ];
 
   programs = {
