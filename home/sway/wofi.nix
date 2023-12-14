@@ -2,7 +2,12 @@
   programs.wofi = {
     enable = true;
     settings = {
-      width = 250;
+      width = 500;
     };
+    style = ''
+      window {
+        background-color: #efefef;
+      }
+    '';
   };
 }

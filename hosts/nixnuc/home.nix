@@ -9,7 +9,6 @@
     ../../home/shell.nix
     ../../home/mako.nix
     ../../home/tmux.nix
-    ../../home/waybar.nix
     ../../home/theme.nix
     ../../home/desktop
   ];
