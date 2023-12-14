@@ -19,6 +19,9 @@
     ueberzugpp
     libnotify
     xdg-utils
+    gtk-engine-murrine
+    gnome.gnome-tweaks
+    lxappearance
   ];
 
   time.timeZone = "Europe/Stockholm";

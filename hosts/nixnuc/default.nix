@@ -42,6 +42,9 @@
   };
   services.blueman.enable = true;
 
+  programs.thunar.enable = true;
+
+
   networking.hostName = "nixnuc";
   networking.networkmanager.enable = true;
 
