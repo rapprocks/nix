@@ -53,7 +53,7 @@
 	      };
 	      "type:pointer" = {
 	        accel_profile = "flat";
-	        pointer_accel = "0.7";
+	        pointer_accel = "0.6";
 	      };
       };
       output = {
