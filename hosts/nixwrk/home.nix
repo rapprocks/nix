@@ -3,14 +3,14 @@
 {
 
   imports = [
-    ../../home/sway/sway.nix
+    ../../home/sway
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix
     ../../home/mako.nix
-    ../../home/waybar.nix
     ../../home/tmux.nix
     ../../home/theme.nix
+    ../../home/desktop
   ];
 
   home = {
