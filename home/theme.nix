@@ -9,7 +9,7 @@
       package = pkgs.apple-cursor;
     };
     theme = {
-      name = "Flat-Remix-GTK-Orange-Darkest";
+      name = "Flat-Remix-GTK-Orange-Dark-Solid";
       package = pkgs.flat-remix-gtk;
     };
     iconTheme = {

@@ -33,6 +33,10 @@ in
     };
   };
 
+  nixpkgs.config = {
+    chromium = { enableWideVine = true; };
+  };
+
   networking.hostName = "nixwrk"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
