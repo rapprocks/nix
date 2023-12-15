@@ -31,15 +31,15 @@
     };
     obs-studio.enable = true;
 
-    chromium = {
-      enable = true;
-      commandLineArgs = [ "--enable-features=UseOzonePlatform,WebRTCPipeWireCapturer,VaapiVideoDecoder,VaapiVideoEncoder" "--ozone-platform=wayland" ];
-      extensions = [
-          { id = "ghmbeldphafepmbegfdlkpapadhbakde"; } # proton pass
-          { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # ublock origin
-          { id = "aghfnjkcakhmadgdomlmlhhaocbkloab"; } # Just black theme
-        ];
-    };
+    #chromium = {
+    #  enable = true;
+    #  commandLineArgs = [ "--enable-features=UseOzonePlatform,WebRTCPipeWireCapturer,VaapiVideoDecoder,VaapiVideoEncoder" "--ozone-platform=wayland" ];
+    #  extensions = [
+    #      { id = "ghmbeldphafepmbegfdlkpapadhbakde"; } # proton pass
+    #      { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # ublock origin
+    #      { id = "aghfnjkcakhmadgdomlmlhhaocbkloab"; } # Just black theme
+    #    ];
+    #};
 
   };
 

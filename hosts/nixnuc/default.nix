@@ -7,9 +7,9 @@
     ];
 
   environment.systemPackages = with pkgs; [
-    fluent-reader
-    caprine-bin
-    solaar
+    fluent-reader # RSS Reader
+    caprine-bin # Facebook messenger
+    solaar # Logitech unifying receiver
   ];
 
   boot.loader = {

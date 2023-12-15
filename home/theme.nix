@@ -12,6 +12,10 @@
       name = "Flat-Remix-GTK-Orange-Darkest";
       package = pkgs.flat-remix-gtk;
     };
+    iconTheme = {
+      name = "Flat-Remix-Dark";
+      package = pkgs.flat-remix-icon-theme;
+    };
   };
 
 }
