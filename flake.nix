@@ -30,6 +30,31 @@
 
   outputs = { self, nixpkgs, home-manager, darwin, nur, firefox-addons, ... }@inputs: {
     nixosConfigurations = {
+      "nixdesk" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+
+        modules = [
+          ./hosts/nixdesk
+	  ./modules/common-linux.nix
+
+          { nixpkgs.overlays = [ nur.overlay ]; }
+	
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = inputs;
+
+            home-manager.users.philip = { pkgs, ... }: {
+              imports = [./hosts/nixdesk/home.nix];
+              home.username = "philip";
+              home.homeDirectory = "/home/philip";
+              home.stateVersion = "23.05";
+            };
+          }
+
+        ];
+      };
       "nixnuc" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
