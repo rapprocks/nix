@@ -5,11 +5,19 @@
     ];
 
   ### NVIDIA SETTINGS MOVE TO HOST FILE ###
+
+  boot.initrd.kernelModules = [ "nvidia" ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+
   hardware.opengl = {
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    solaar # unifying receiver
+  ];
 
   hardware.nvidia = {
     modesetting.enable = true;
@@ -17,6 +25,9 @@
     open = true;
     nvidiaSettings = true;
   };
+
+  services.xserver.videoDrivers = [ "nvidia" ];
+
   ### END NVIDIA SETTINGS ###
 
   boot.loader = {
