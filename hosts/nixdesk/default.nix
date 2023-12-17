@@ -1,6 +1,8 @@
 { config, pkgs, ... }: {
   imports =
     [ 
+      ../../modules/i3
+
       ./hardware-configuration.nix
     ];
 

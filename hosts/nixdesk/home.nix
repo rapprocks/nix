@@ -13,12 +13,6 @@
     ../../home/desktop
   ];
 
-  #home.sessionVariables = {
-  #  LIBVA_DRIVER_NAME = "nvidia";
-  #  GBM_BACKEND = "nvidia-drm";
-  #  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-  #};
-
   programs = {
     eza = {
       enable = true;
@@ -35,8 +29,6 @@
         url = { "ssh://git@github.com/" = { insteadOf = "https://github.com/"; }; };
       };
     };
-    obs-studio.enable = true;
-
   };
 
   fonts.fontconfig.enable = true;

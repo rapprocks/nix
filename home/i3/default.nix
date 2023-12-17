@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./i3.nix
+    ./i3wm.nix
   ];
   environment.systemPackages = with pkgs; [
     xorg.xrandr
