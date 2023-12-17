@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
   imports =
     [ 
-      ../../modules/i3
+      ../../modules/i3.nix
 
       ./hardware-configuration.nix
     ];
