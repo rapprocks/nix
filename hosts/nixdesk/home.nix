@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ../../home/sway
+    ../../home/i3
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix
@@ -13,14 +13,11 @@
     ../../home/desktop
   ];
 
-  home.sessionVariables = {
-    LIBVA_DRIVER_NAME = "nvidia";
-    GBM_BACKEND = "nvidia-drm";
-    WLR_NO_HARDWARE_CURSORS = 1;
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    CLUTTER_BACKEND = "wayland";
-    XWAYLAND_NO_GLAMOR = 1;
-  };
+  #home.sessionVariables = {
+  #  LIBVA_DRIVER_NAME = "nvidia";
+  #  GBM_BACKEND = "nvidia-drm";
+  #  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  #};
 
   programs = {
     eza = {
