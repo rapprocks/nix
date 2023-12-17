@@ -13,6 +13,15 @@
     ../../home/desktop
   ];
 
+  home.sessionVariables = {
+    LIBVA_DRIVER_NAME = "nvidia";
+    GBM_BACKEND = "nvidia-drm";
+    WLR_NO_HARDWARE_CURSORS = 1;
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
+    CLUTTER_BACKEND = "wayland";
+    XWAYLAND_NO_GLAMOR = 1;
+  };
+
   programs = {
     eza = {
       enable = true;
@@ -30,16 +39,6 @@
       };
     };
     obs-studio.enable = true;
-
-    #chromium = {
-    #  enable = true;
-    #  commandLineArgs = [ "--enable-features=UseOzonePlatform,WebRTCPipeWireCapturer,VaapiVideoDecoder,VaapiVideoEncoder" "--ozone-platform=wayland" ];
-    #  extensions = [
-    #      { id = "ghmbeldphafepmbegfdlkpapadhbakde"; } # proton pass
-    #      { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # ublock origin
-    #      { id = "aghfnjkcakhmadgdomlmlhhaocbkloab"; } # Just black theme
-    #    ];
-    #};
 
   };
 

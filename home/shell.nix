@@ -11,9 +11,9 @@
       enableCompletion = true;
       syntaxHighlighting.enable = true;
       autocd = true;
-      profileExtra = ''
-        [ "$(tty)" = "/dev/tty1" ] && exec sway
-      '';
+      #profileExtra = ''
+      #  [ "$(tty)" = "/dev/tty1" ] && exec sway
+      #'';
       shellAliases = {
         rebuild = "sudo nixos-rebuild switch";
         vi = "nvim";
