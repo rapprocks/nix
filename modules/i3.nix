@@ -1,5 +1,6 @@
 {pkgs, ...}:
 {
+  services.picom.enable = true; #fixes shadows for chromium context menus
   services.xserver = {
     enable = true;
 

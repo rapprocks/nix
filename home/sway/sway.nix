@@ -12,6 +12,11 @@
     xorg.xlsclients
     xorg.xwininfo
   ];
+
+  # Chromium args
+  programs.chromium = {
+    commandLineArgs = [ "--enable-features=UseOzonePlatform,WebRTCPipeWireCapturer,VaapiVideoDecoder,VaapiVideoEncoder" "--ozone-platform=wayland" ];
+  };
   
   wayland.windowManager.sway = {
 

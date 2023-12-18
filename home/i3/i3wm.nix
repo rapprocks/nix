@@ -14,6 +14,20 @@ in {
       window = {
 	titlebar = false;
       };
+      startup = [
+        {
+          command = "exec --no-startup-id picom";
+        }
+        {
+          command = "exec feh --bg-fill $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png";
+          always = true;
+        }
+      ];
+      bars = [
+        {
+          position = "top";
+        }
+      ];
     };
   };
 }

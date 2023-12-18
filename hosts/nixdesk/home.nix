@@ -29,6 +29,7 @@
         url = { "ssh://git@github.com/" = { insteadOf = "https://github.com/"; }; };
       };
     };
+    feh.enable = true;
   };
 
   fonts.fontconfig.enable = true;
