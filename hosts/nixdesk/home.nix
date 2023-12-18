@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ../../home/i3
+    ../../home/sway
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix
