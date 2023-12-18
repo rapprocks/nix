@@ -68,7 +68,7 @@
 	  mode = "2560x1440@143Hz";
 	  background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill"; }; # nixnuc
         DP-1 = {
-          mode = "2560x1440@143Hz";
+          mode = "3440x1440@99Hz";
 	  background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill";  }; # nixwrk
       };
       keybindings = lib.mkOptionDefault {
