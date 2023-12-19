@@ -20,11 +20,16 @@
     stateVersion = "23.05";
   };
 
-  xdg.mimeApps = {
-    defaultApplications = {
-      "text/html" = "chromium.desktop";
-      "x-scheme-handler/http" = "chromium.desktop";
-      "x-scheme-handler/https" = "chromium.desktop";
+  xdg = {
+    mimeApps = {
+      defaultApplications = {
+        "text/html" = "chromium.desktop";
+        "x-scheme-handler/http" = "chromium.desktop";
+        "x-scheme-handler/https" = "chromium.desktop";
+      };
+    };
+    userDirs = {
+      enable = true;
     };
   };
 

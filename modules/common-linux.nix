@@ -59,7 +59,7 @@
     VISUAL = "nvim";
   };
 
-  fonts = {
+   fonts = {
     packages = with pkgs; [
       (nerdfonts.override { fonts = [ "FiraCode" "Hack" "JetBrainsMono" "FiraCode" ]; })
       noto-fonts

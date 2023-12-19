@@ -42,6 +42,10 @@
 	  criteria.app_id = "pavucontrol";
 	  command = "floating enable";
 	}
+	{
+	  criteria.app_id = "feh";
+	  command = "floating enable";
+	}
       ];
       input = {
 	      "type:keyboard" = {
@@ -78,8 +82,8 @@
         "Mod4+l" = "exec swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png";
 	      "Mod4+q" = "kill";
 	      "Mod4+space" = "exec wofi --show run";
-	      "Mod4+p" = "exec grimshot save active --notify";
-	      "Mod4+shift+p" = "exec wl-copy < $(grimshot save area 123.png --notify)";
+	      "Mod4+p" = "exec grimshot --notify save active";
+	      "Mod4+shift+p" = "exec wl-copy < $(grimshot --notify save area)";
 	      "XF86AudioMute" = "exec --no-startup-id 'amixer set Master toggle'";
 	      "XF86AudioRaiseVolume" = "exec --no-startup-id 'amixer sset Master '5%+''";
 	      "XF86AudioLowerVolume" = "exec --no-startup-id 'amixer sset Master '5%-''";

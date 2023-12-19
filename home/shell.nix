@@ -25,7 +25,7 @@
         dot = "cd ~/dotfiles";
         tree = "tree -C";
         dev = "cd ~/Developer";
-        weather = "curl -S 'https://wttr.in/?1F'";
+        weather = "curl -S 'https://wttr.in/Stockholm?1F'";
       };
     };
     starship = {
