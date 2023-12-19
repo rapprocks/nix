@@ -10,3 +10,7 @@
         - nixdesk
         - nixwrk
         - nixmbp
+
+## Links
+    - https://github.com/IvarWithoutBones/dotfiles
+    - https://github.com/katexochen/nixos
