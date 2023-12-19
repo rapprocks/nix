@@ -67,6 +67,9 @@
 	HDMI-A-1 = {
 	  mode = "2560x1440@143Hz";
 	  background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill"; }; # nixnuc
+	DP-3 = {
+	  mode = "2560x1440@143Hz";
+	  background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill"; }; # nixdesk
         DP-1 = {
           mode = "3440x1440@99Hz";
 	  background = "$HOME/dotfiles/wallpapers/nixos-dark-2.wp.png fill";  }; # nixwrk
