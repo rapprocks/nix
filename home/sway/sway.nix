@@ -44,14 +44,14 @@
 	        xkb_layout = "se";
 	        xkb_options = "caps:ctrl_modifier";
 	        repeat_delay = "225";
-	        repeat_rate = "25";
+	        repeat_rate = "50";
 	      };
 	      "1452:592:Ducky_Ducky_One2_Mini_RGB" = {
 	        xkb_variant = "mac";
 	        xkb_layout = "se";
 	        xkb_options = "altwin:swap_lalt_lwin,caps:ctrl_modifier";
 	        repeat_delay = "225";
-	        repeat_rate = "25";
+	        repeat_rate = "50";
 	      };
 	      "type:pointer" = {
 	        accel_profile = "flat";
