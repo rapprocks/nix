@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
   programs.chromium = {
     enable = true;
-    commandLineArgs = [ "--enable-features=UseOzonePlatform,WebRTCPipeWireCapturer,VaapiVideoDecoder,VaapiVideoEncoder" "--ozone-platform=wayland" ];
     extensions = [
       { id = "ghmbeldphafepmbegfdlkpapadhbakde"; } # proton pass
       { id = "bfogiafebfohielmmehodmfbbebbbpei"; } # Keeper vault

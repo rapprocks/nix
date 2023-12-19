@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ../../home/i3
+    ../../home/sway
     ../../home/alacritty.nix
     ../../home/firefox.nix
     ../../home/shell.nix
@@ -12,12 +12,6 @@
     ../../home/theme.nix
     ../../home/desktop
   ];
-
-  #home.sessionVariables = {
-  #  LIBVA_DRIVER_NAME = "nvidia";
-  #  GBM_BACKEND = "nvidia-drm";
-  #  __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-  #};
 
   programs = {
     eza = {
@@ -35,8 +29,7 @@
         url = { "ssh://git@github.com/" = { insteadOf = "https://github.com/"; }; };
       };
     };
-    obs-studio.enable = true;
-
+    feh.enable = true;
   };
 
   fonts.fontconfig.enable = true;
