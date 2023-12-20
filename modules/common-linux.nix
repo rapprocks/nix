@@ -13,15 +13,16 @@
     tldr
     gcc
     nnn
-    ranger
-    cowsay
-    blueberry
-    pavucontrol
-    ueberzugpp
-    libnotify
+    ranger # File manager
+    cowsay # Funsies
+    blueberry # Bloototh gui
+    pavucontrol # Sound settings gui
+    ueberzugpp # Needed by ranger for image previews
+    libnotify # Notifications
     xdg-utils
     gtk-engine-murrine
     gnome.gnome-tweaks
+    swappy # Screenshot tool like flameshot / greenshot
   ];
 
   time.timeZone = "Europe/Stockholm";
