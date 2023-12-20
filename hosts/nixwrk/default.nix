@@ -45,6 +45,7 @@ in
     fluent-reader
     powershell
     caprine-bin
+    brave
   ];
 
   sound.enable = true;

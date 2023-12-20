@@ -14,6 +14,7 @@
     gcc
     nnn
     ranger
+    cowsay
     blueberry
     pavucontrol
     ueberzugpp

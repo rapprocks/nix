@@ -28,16 +28,5 @@
         weather = "curl -S 'https://wttr.in/Stockholm?1F'";
       };
     };
-    starship = {
-      enable = true;
-      enableZshIntegration = true;
-      settings = {
-        add_newline = false;
-        character = {
-          success_symbol = "[➜](bold green)";
-          error_symbol = "[➜](bold red)";
-        };
-      };
-    };
   };
 }
