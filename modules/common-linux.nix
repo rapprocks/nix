@@ -59,12 +59,16 @@
     VISUAL = "nvim";
   };
 
-  fonts = {
+   fonts = {
     packages = with pkgs; [
       (nerdfonts.override { fonts = [ "FiraCode" "Hack" "JetBrainsMono" "FiraCode" ]; })
+      noto-fonts
+      noto-fonts-emoji
     ];
     fontconfig = {
       defaultFonts = {
+        serif = [ "Noto Serif" ];
+        sansSerif = [ "Noto Sans" ];
         monospace = [ "JetBrainsMono Nerd Font Mono" ];
       };
     };
