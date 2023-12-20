@@ -5,5 +5,6 @@
     ./swayidle.nix
     ./waybar.nix
     ./wofi.nix
+    ./mako.nix
   ];
 }

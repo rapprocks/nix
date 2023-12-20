@@ -4,13 +4,9 @@
 
   imports = [
     ../../home/sway
-    ../../home/alacritty.nix
-    ../../home/firefox.nix
-    ../../home/shell.nix
-    ../../home/mako.nix
-    ../../home/tmux.nix
-    ../../home/theme.nix
     ../../home/desktop
+    ../../home/shell
+    ../../home/theme.nix
   ];
 
   programs = {

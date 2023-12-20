@@ -1,16 +1,10 @@
-{ config, pkgs, ... }:
-
-{
-
+{ config, pkgs, ... }: {
+  
   imports = [
     ../../home/sway
-    ../../home/alacritty.nix
-    ../../home/firefox.nix
-    ../../home/shell.nix
-    ../../home/mako.nix
-    ../../home/tmux.nix
-    ../../home/theme.nix
     ../../home/desktop
+    ../../home/shell
+    ../../home/theme.nix
   ];
 
   programs = {
@@ -30,17 +24,6 @@
       };
     };
     obs-studio.enable = true;
-
-    #chromium = {
-    #  enable = true;
-    #  commandLineArgs = [ "--enable-features=UseOzonePlatform,WebRTCPipeWireCapturer,VaapiVideoDecoder,VaapiVideoEncoder" "--ozone-platform=wayland" ];
-    #  extensions = [
-    #      { id = "ghmbeldphafepmbegfdlkpapadhbakde"; } # proton pass
-    #      { id = "cjpalhdlnbpafiamejdnhcphjbkeiagm"; } # ublock origin
-    #      { id = "aghfnjkcakhmadgdomlmlhhaocbkloab"; } # Just black theme
-    #    ];
-    #};
-
   };
 
   fonts.fontconfig.enable = true;
