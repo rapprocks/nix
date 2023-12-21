@@ -46,6 +46,7 @@ in
     powershell
     caprine-bin
     brave
+    tailscale
   ];
 
   sound.enable = true;
@@ -58,16 +59,26 @@ in
   };
 
   programs.thunar.enable = true;
-  services.tumbler.enable = true;
+
+  services = {
+    tumbler.enable = true;
+    blueman.enable = true;
+    openssh.enable = true;
+
+    tailscale = {
+      enable = true;
+      useRoutingFeatures = "client";
+    };
+  };
 
   hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
-
-  services.openssh.enable = true;
 
   security.sudo.wheelNeedsPassword = false;
 
-  networking.firewall.enable = false;
+  networking.firewall = {
+    enable = false;
+    trustedInterfaces = [ "tailscale0" ];
+  };
   
   system.stateVersion = "23.05"; # Did you read the comment?
 }
