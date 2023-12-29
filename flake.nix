@@ -33,7 +33,22 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, darwin, nur, firefox-addons, nixvim, ... }@inputs: {
+  outputs = { self
+    , nixpkgs
+    , home-manager
+    , darwin
+    , nur
+    , firefox-addons
+    , nixvim
+    , ... 
+    } @inputs:
+    let
+      pkgs = import nixpkgs {
+        config.allowUnfree = true;
+      };
+      inherit (nixpkgs) lib;
+    in    
+    {
     nixosConfigurations = {
       "nixdesk" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

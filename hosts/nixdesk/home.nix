@@ -6,6 +6,7 @@
     ../../home/sway
     ../../home/desktop
     ../../home/shell
+    ../../home/nixvim
     ../../home/theme.nix
   ];
 

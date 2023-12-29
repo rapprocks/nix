@@ -11,6 +11,8 @@
     driSupport32Bit = true;
   };
 
+  nixpkgs.config.allowUnfree = true;
+
   environment.systemPackages = with pkgs; [
     solaar # unifying receiver
     brave
