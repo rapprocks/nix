@@ -15,6 +15,11 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
     home-manager = {
       url = "github:nix-community/home-manager/";
@@ -28,7 +33,7 @@
 
   };
 
-  outputs = { self, nixpkgs, home-manager, darwin, nur, firefox-addons, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, darwin, nur, firefox-addons, nixvim, ... }@inputs: {
     nixosConfigurations = {
       "nixdesk" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -46,7 +51,10 @@
             home-manager.extraSpecialArgs = inputs;
 
             home-manager.users.philip = { pkgs, ... }: {
-              imports = [./hosts/nixdesk/home.nix];
+              imports = [
+                ./hosts/nixdesk/home.nix
+                nixvim.homeManagerModules.nixvim
+              ];
               home.username = "philip";
               home.homeDirectory = "/home/philip";
               home.stateVersion = "23.05";
