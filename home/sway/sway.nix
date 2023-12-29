@@ -9,8 +9,7 @@
     waybar
     wlr-randr
     sway-contrib.grimshot
-    xorg.xlsclients
-    xorg.xwininfo
+    wdisplays
   ];
 
   # Chromium args

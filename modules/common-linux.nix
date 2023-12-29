@@ -13,6 +13,7 @@
     tldr
     gcc
     nnn
+    sshpass # Reguired by Ansible for ssh password auth
     ranger # File manager
     cowsay # Funsies
     blueberry # Bloototh gui

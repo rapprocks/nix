@@ -36,7 +36,6 @@
         modules = [
           ./hosts/nixdesk
 	  ./modules/common-linux.nix
-          ./modules/linux/smb.nix
 
           { nixpkgs.overlays = [ nur.overlay ]; }
 	

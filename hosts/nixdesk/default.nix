@@ -2,6 +2,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
+      ../../modules/linux/smb.nix
     ];
 
   hardware.opengl = {
@@ -12,6 +13,12 @@
 
   environment.systemPackages = with pkgs; [
     solaar # unifying receiver
+    brave
+    ansible
+    terraform
+
+    ansible-language-server
+    terraform-ls
   ];
 
   boot.loader = {
