@@ -6,5 +6,6 @@
     ./waybar.nix
     ./wofi.nix
     ./mako.nix
+    ./kanshi.nix
   ];
 }

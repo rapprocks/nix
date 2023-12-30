@@ -35,6 +35,7 @@
       bars = [{ command = "waybar"; }];
       window = {
         titlebar = false;
+        hideEdgeBorders = "smart";
       };
       window.commands = [
 	{
