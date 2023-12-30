@@ -3,6 +3,8 @@
     plugins.telescope = {
       enable = true;
 
+      extensions.fzf-native.enable = true;
+
       keymaps = {
         # Find files using Telescope command-line sugar.
         "<leader>f" = {

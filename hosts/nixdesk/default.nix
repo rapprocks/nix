@@ -19,6 +19,8 @@
     ansible
     terraform
 
+    ripgrep # need for live grep in nvim telescope.
+
     ansible-language-server
     terraform-ls
   ];

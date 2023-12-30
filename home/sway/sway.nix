@@ -30,8 +30,8 @@
     wrapperFeatures.gtk = true;
     config = {
       modifier = "Mod4";
-      terminal = "alacritty";
-      menu = "wofi --show run";
+      terminal = "kitty";
+      menu = "rofi -show drun";
       bars = [{ command = "waybar"; }];
       startup = [
         {
@@ -91,7 +91,7 @@
       keybindings = lib.mkOptionDefault {
         "Mod4+l" = "exec swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png";
 	      "Mod4+q" = "kill";
-	      "Mod4+space" = "exec wofi --show run";
+	      "Mod4+space" = "exec rofi -show drun";
 	      "Mod4+p" = "exec grimshot --notify save active";
 	      "Mod4+shift+p" = "exec wl-copy < $(grimshot --notify save area)";
 	      "XF86AudioMute" = "exec --no-startup-id 'amixer set Master toggle'";

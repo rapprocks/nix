@@ -9,7 +9,7 @@
       # Open Neo tree (find one for toggle to close)
       {
         key = "<C-n>";
-        action = ":Neotree filesystem reveal left<CR>";
+        action = ":Neotree toggle<CR>";
       }
 
       # Navigate to left window
