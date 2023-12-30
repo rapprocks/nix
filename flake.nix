@@ -55,7 +55,7 @@
 
         modules = [
           ./hosts/nixdesk
-	  ./modules/common-linux.nix
+      	  ./modules/common-linux.nix
 
           { nixpkgs.overlays = [ nur.overlay ]; }
 	
@@ -83,7 +83,7 @@
 
         modules = [
           ./hosts/nixnuc
-	  ./modules/common-linux.nix
+	        ./modules/common-linux.nix
 
           { nixpkgs.overlays = [ nur.overlay ]; }
 	  
@@ -106,9 +106,9 @@
       "nixwrk" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
-	modules = [
+	      modules = [
           ./hosts/nixwrk
-	  ./modules/common-linux.nix
+	        ./modules/common-linux.nix
 
           home-manager.nixosModules.home-manager
           {
@@ -118,7 +118,7 @@
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.philip = import ./hosts/nixwrk/home.nix;
           }
-	];
+	      ];
       };
     };
   };
