@@ -5,9 +5,26 @@
       maplocalleader = " ";
     };
     keymaps = [
-      { key = "<C-n>"; action = ":Neotree filesystem reveal left<CR>"; } # open neo tree
-      { key = "<leader>h"; action = "<C-w>h"; } # navigate to left window
-      { key = "<leader>l"; action = "<C-w>l"; } # navigate to right window
+      
+      # Open Neo tree (find one for toggle to close)
+      {
+        key = "<C-n>";
+        action = ":Neotree filesystem reveal left<CR>";
+      }
+
+      # Navigate to left window
+      {
+        mode = "n";
+        key = "<leader>h";
+        action = "<C-w>h";
+      }
+
+      # Navigate to right window
+      {
+        mode = "n";
+        key = "<leader>l";
+        action = "<C-w>l";
+      }
     ];
   };
 }

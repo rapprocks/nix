@@ -4,10 +4,5 @@
     settings = {
       width = 500;
     };
-    #style = ''
-    #  window {
-    #    background-color: #efefef;
-    #  }
-    #'';
   };
 }

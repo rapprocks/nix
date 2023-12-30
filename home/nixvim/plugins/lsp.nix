@@ -23,9 +23,11 @@
         };
 
         servers = {
-          clangd.enable = true;
           lua-ls.enable = true;
-          texlab.enable = true;
+          ansiblels.enable = true;
+          rnix-lsp.enable = true;
+          terraformls.enable = true;
+          yamlls.enable = true;
         };
       };
     };

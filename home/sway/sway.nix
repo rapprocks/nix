@@ -33,6 +33,16 @@
       terminal = "alacritty";
       menu = "wofi --show run";
       bars = [{ command = "waybar"; }];
+      startup = [
+        {
+          command = "pkill kanshi";
+          always = true;
+        }
+        {
+          command = "kanshi";
+          always = true;
+        }
+      ];
       window = {
         titlebar = false;
         hideEdgeBorders = "smart";
