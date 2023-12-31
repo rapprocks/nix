@@ -33,7 +33,8 @@
 
   };
 
-  outputs = { self
+  outputs =
+    { self
     , nixpkgs
     , home-manager
     , darwin
@@ -56,14 +57,12 @@
         modules = [
           ./hosts/nixdesk
       	  ./modules/common-linux.nix
-
-          { nixpkgs.overlays = [ nur.overlay ]; }
 	
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = inputs;
+            home-manager.extraSpecialArgs = { inherit inputs; };
 
             home-manager.users.philip = { pkgs, ... }: {
               imports = [

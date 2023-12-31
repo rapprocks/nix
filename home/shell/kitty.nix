@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
     environment = {
-      "TERM" = "xterm-256color";
+      "$TERM" = "xterm-256color";
     };
     shellIntegration.enableZshIntegration = true;
     font = {

@@ -1,5 +1,7 @@
 { pkgs, config, ... }:
-let lockTime = 4 * 60;
+let
+  lockTime = 4 * 60;
+  swaymsg = "${config.wayland.windowManager.sway.package}/bin/swaymsg";
 in
 {
   services.swayidle = {
