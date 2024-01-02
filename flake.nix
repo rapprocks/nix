@@ -57,6 +57,8 @@
         modules = [
           ./hosts/nixdesk
       	  ./modules/common-linux.nix
+
+          { nixpkgs.overlays = [ nur.overlay ]; }
 	
           home-manager.nixosModules.home-manager
           {

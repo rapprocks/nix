@@ -3,27 +3,7 @@
     plugins.telescope = {
       enable = true;
 
-      extensions.fzf-native.enable = true;
-
-      keymaps = {
-        # Find files using Telescope command-line sugar.
-        "<leader>f" = {
-          action = "find_files";
-          desc = "Telescope find files";
-        };
-        #"<leader>f" = "find_files";
-        "<leader>fg" = "live_grep";
-        "<leader>b" = "buffers";
-        "<leader>fh" = "help_tags";
-        "<leader>fd" = "diagnostics";
-
-        # FZF like bindings
-        "<C-p>" = "git_files";
-        "<leader>p" = "oldfiles";
-        "<C-f>" = "live_grep";
-      };
-
-      keymapsSilent = true;
+      #extensions.fzf-native.enable = true;
 
       defaults = {
         file_ignore_patterns = [

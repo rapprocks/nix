@@ -30,3 +30,5 @@ vimPlugins.nvim-treesitter
 vimPlugins.lualine-nvim
 vimPlugins.neo-tree-nvim
 
+
+

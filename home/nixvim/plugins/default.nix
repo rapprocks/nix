@@ -8,13 +8,16 @@
   ];
 
   programs.nixvim = {
-    colorschemes.catppuccin = {
-      enable = true;
-      flavour = "macchiato";
-      transparentBackground = true;
-    };
-    #extraPlugins = [ pkgs.vimPlugins.onedark-nvim];
-    #colorscheme = "onedark";
+    extraPlugins = [ pkgs.vimPlugins.onedark-nvim];
+
+    extraConfigLua = ''
+      require('onedark').setup {
+        style = 'darker',
+        transparent = true,
+        term_colors = true
+      }
+      require('onedark').load()
+    '';
 
     plugins = {
       gitsigns = {
