@@ -7,18 +7,18 @@ in
   services.swayidle = {
     enable = true;
     systemdTarget = "sway-session.target";
+    events = [
+      { event = "before-sleep"; command = "${pkgs.swaylock-effects}/bin/swaylock -e -f -F --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png"; }
+    ];
     timeouts = [
       {
-        timeout = lockTime;
+        timeout = 60;
         command = "${pkgs.swaylock-effects}/bin/swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png"; 
       }
       {
-        timeout = lockTime * 2;
+        timeout = 70;
         command = "${pkgs.systemd}/bin/systemctl suspend";
       }
-    ];
-    events = [
-      { event = "before-sleep"; command = "${pkgs.swaylock-effects}/bin/swaylock -e --image $HOME/dotfiles/wallpapers/nixos-dark-2.wp.png"; }
     ];
   };
 }

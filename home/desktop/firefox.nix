@@ -26,6 +26,7 @@
         "devtools.theme" = "dark";
         "signon.rememberSignons" = false;
         "privacy.trackingprotection.enabled" = true;
+        "browser.ssb.enabled" = true;
       };
     };
   };
