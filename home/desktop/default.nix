@@ -4,5 +4,6 @@
     ./notion.nix
     ./chromium.nix
     ./firefox.nix
+    ./email.nix
   ];
 }
