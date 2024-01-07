@@ -21,6 +21,8 @@
       bind -r j select-pane -D
       bind -r h select-pane -L
       bind -r l select-pane -R
+
+      set -g status-position top
     '';
   };
   

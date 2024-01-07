@@ -19,6 +19,10 @@
     ansible
     terraform
 
+    fluent-reader # RSS Reader
+    caprine-bin # Faceboom messenger
+
+
     ripgrep # need for live grep in nvim telescope.
 
     ansible-language-server

@@ -1,7 +1,8 @@
-{ config, pkgs, lib, ... }:
-{
+{ config, pkgs, lib, ... }: {
+  
   imports = [
   ];
+
   home.packages = with pkgs; [
     swaylock-effects
     wl-clipboard
@@ -34,14 +35,17 @@
       menu = "rofi -show drun";
       bars = [{ command = "waybar"; }];
       startup = [
+        
         {
           command = "pkill kanshi";
           always = true;
         }
+
         {
           command = "kanshi";
           always = true;
         }
+
       ];
       window = {
         titlebar = false;

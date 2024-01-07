@@ -31,23 +31,76 @@
       }
       // config
     ) {
-      personal = {
-        address = "philip.rapp@gmail.com";
+
+       Icloud = {
+        address = "philip.rapp@me.com";
 
         primary = true;
 
         imap = {
-          host = "imap.gmail.com";
-          port = "993";
-          tls.useStartTls = true;
+          host = "imap.mail.me.com";
+          port = 993;
+          tls.enable = true;
         };
 
         smtp = {
-          host = "smtp.gmail.com";
-          port = "587";
+          host = "smtp.mail.me.com";
+          port = 587;
           tls.useStartTls = true;
         };
 
       };
+
+     GoogleMain = {
+        address = "philip.rapp@gmail.com";
+
+        imap = {
+          host = "imap.gmail.com";
+          port = 993;
+          tls.enable = true;
+        };
+
+        smtp = {
+          host = "smtp.gmail.com";
+          port = 587;
+          tls.enable = true;
+        };
+
+      };
+
+      junk = {
+        address = "ext.prapp@gmail.com";
+
+        imap = {
+          host = "imap.gmail.com";
+          port = 993;
+          tls.enable = true;
+        };
+
+        smtp = {
+          host = "smtp.gmail.com";
+          port = 587;
+          tls.enable = true;
+        };
+
+      };
+
+      alerts = {
+        address = "alerts.rapprocks@gmail.com";
+
+        imap = {
+          host = "imap.gmail.com";
+          port = 993;
+          tls.enable = true;
+        };
+
+        smtp = {
+          host = "smtp.gmail.com";
+          port = 587;
+          tls.enable = true;
+        };
+
+      };
+
     };
 }
