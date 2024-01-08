@@ -62,9 +62,15 @@
 	
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit inputs; };
+            #home-manager.useGlobalPkgs = true;
+            #home-manager.useUserPackages = true;
+            #home-manager.extraSpecialArgs = { inherit inputs; };
+
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; };
+            };
 
             home-manager.users.philip = { pkgs, ... }: {
               imports = [
@@ -109,17 +115,37 @@
 
 	      modules = [
           ./hosts/nixwrk
-	        ./modules/common-linux.nix
+	  ./modules/common-linux.nix
+
+          { nixpkgs.overlays = [ nur.overlay ]; }
 
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
 
-            home-manager.extraSpecialArgs = inputs;
-            home-manager.users.philip = import ./hosts/nixwrk/home.nix;
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; };
+            };
+
+            home-manager.users.philip = { pkgs, ... }: {
+              imports = [
+                ./hosts/nixwrk/home.nix
+                nixvim.homeManagerModules.nixvim
+              ];
+              home.username = "philip";
+              home.homeDirectory = "/home/philip";
+              home.stateVersion = "23.05";
+            };
+
+
+            #home-manager.useGlobalPkgs = true;
+            #home-manager.useUserPackages = true;
+
+            #home-manager.extraSpecialArgs = inputs;
+            #home-manager.users.philip = import ./hosts/nixwrk/home.nix;
           }
-	      ];
+	];
       };
     };
   };
