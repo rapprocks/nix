@@ -22,6 +22,7 @@
     fluent-reader # RSS Reader
     caprine-bin # Faceboom messenger
 
+    gimp
 
     ripgrep # need for live grep in nvim telescope.
 

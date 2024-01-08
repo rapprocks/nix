@@ -27,6 +27,7 @@
       };
     };
     feh.enable = true;
+    mpv.enable = true;
   };
 
   fonts.fontconfig.enable = true;

@@ -1,7 +1,7 @@
 { pkgs, config, lib, ... }: {
   services.swayidle = {
     enable = true;
-    systemdTarget = "xdg-desktop-portal-hyprland.service";
+    systemdTarget = "graphical-session.target";
 
     events = [
 
@@ -24,9 +24,11 @@
         command = "swaymsg 'output * power on'";
       }
     ];
-    timeouts = [{
-      timeout = 55;
-      command = "${pkgs.systemd}/bin/systemctl suspend";
-    }];
+    timeouts = [
+     {
+        timeout = 300;
+        command = "${pkgs.systemd}/bin/systemctl suspend";
+      }
+    ];
   };
 }
