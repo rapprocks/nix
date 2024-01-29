@@ -1,7 +1,4 @@
-{ config, pkgs, ... }:
-
-{
-
+{ config, pkgs, ... }: {
   programs = {
 
     zsh = {
@@ -26,6 +23,11 @@
         tree = "tree -C";
         dev = "cd ~/Developer";
         weather = "curl -S 'https://wttr.in/Stockholm?1F'";
+      };
+      oh-my-zsh = {
+        enable = true;
+        theme = "robbyrussell";
+        plugins = [ "git" ];
       };
     };
   };

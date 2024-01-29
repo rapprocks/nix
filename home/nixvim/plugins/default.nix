@@ -8,16 +8,23 @@
   ];
 
   programs.nixvim = {
-    extraPlugins = [ pkgs.vimPlugins.onedark-nvim];
 
-    extraConfigLua = ''
-      require('onedark').setup {
-        style = 'darker',
-        transparent = true,
-        term_colors = true
-      }
-      require('onedark').load()
-    '';
+    colorschemes.rose-pine = {
+      enable = true;
+      transparentBackground = true;
+      transparentFloat = true;
+      style = "moon";
+    };
+    #extraPlugins = [ pkgs.vimPlugins.onedark-nvim];
+
+    #extraConfigLua = ''
+    #  require('onedark').setup {
+    #    style = 'darker',
+    #    transparent = true,
+    #    term_colors = true
+    #  }
+    #  require('onedark').load()
+    #'';
 
     plugins = {
       gitsigns = {

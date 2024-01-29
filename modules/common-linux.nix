@@ -79,7 +79,7 @@
   users.users.philip = {
     isNormalUser = true;
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
   };
 
   # Hardware Support for Wayland Sway

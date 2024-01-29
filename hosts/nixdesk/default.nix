@@ -3,6 +3,7 @@
     [ 
       ./hardware-configuration.nix
       ../../modules/linux/smb.nix
+      ../../modules/linux/virtualisation.nix
     ];
 
   hardware.opengl = {

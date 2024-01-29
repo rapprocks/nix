@@ -81,6 +81,14 @@
 	        pointer_accel = "0.6";
 	      };
       };
+      #assigns = {
+      #  "alacritty"  = [{title = "Alacritty";}];
+      #  "firefox" = [{title = "Firefox";}];
+      #};
+      #workspaceOutputAssign = [
+      #  { workspace = "alacritty";     output = "DP-3";}
+      #  { workspace = "firefox";   output = "DP-3";}
+      #];
       output = {
 	HDMI-A-1 = {
 	  mode = "2560x1440@143Hz";

@@ -9,6 +9,11 @@
         file_ignore_patterns = [
           "^.git/"
         ];
+
+        border = {
+          
+        };
+
         layout_config = {
           horizontal = {
             width = 0.9;

@@ -4,7 +4,7 @@
     ./alacritty.nix
     ./kitty.nix
     ./shell.nix
-    ./starship.nix
+    #./starship.nix
     ./tmux.nix
   ];
 }

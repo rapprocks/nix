@@ -34,7 +34,7 @@
         };
       };
       window = {
-        padding.x = 1;
+        padding.x = 4;
         padding.y = 1;
       };
       decorations = "None";
